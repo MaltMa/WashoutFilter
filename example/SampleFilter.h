@@ -13,7 +13,7 @@ public:
 class Sample_translationLowPassFilter : public MotionFilter
 {
 private:
-  // Dampinging coefficient
+  // Dampinging coefficient阻尼系数
   double damping;
 
 public:
