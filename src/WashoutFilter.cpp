@@ -64,7 +64,7 @@ Position WashoutFilter::doFilter(Motion &motion)
   m_z = integrateWithTime(m_z, m_vz);
 
   //------------------------------------------//
-  // Tilt-coordination
+  // Tilt-coordination倾斜协调
   //------------------------------------------//
   double ax_lp = rLPFs[0]->doFilter(ax_scale);
   double ay_lp = rLPFs[1]->doFilter(ay_scale);
@@ -119,7 +119,7 @@ Position WashoutFilter::doFilter(Motion &motion)
   m_sit = sit_t + sit_r;
 
   //------------------------------------------//
-  // Calculate gravity in vehicle coordinate (gs)
+  // Calculate gravity in vehicle coordinate (gs)在车辆坐标中计算重力
   //------------------------------------------//
   double sphi = sin(m_phi);
   double cphi = cos(m_phi);
